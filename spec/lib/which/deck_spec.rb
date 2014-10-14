@@ -63,7 +63,7 @@ describe Which::Deck do
         expect(@clubs.size).to eq(13)
       end
 
-      it "should have a King of Diamonds" do
+      it "should have a King of Clubs" do
         expect(@clubs[12].to_s).to eq("The King of Clubs")
       end
     end
