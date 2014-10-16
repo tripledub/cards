@@ -15,19 +15,8 @@ module Which
     private
 
     def face
-      case @face
-      when 1
-        "Ace"
-      when 11
-        "Jack"
-      when 12
-        "Queen"
-      when 13
-        "King"
-      else
-        @face
-      end
+      faces = { 1 => "Ace", 11 => "Jack", 12 => "Queen", 13 => "King" }
+      faces[@face] || @face
     end
-
   end
 end
